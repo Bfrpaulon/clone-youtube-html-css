@@ -115,12 +115,57 @@
     }
 
     #header>#nav-right {
+        justify-content: end;
         width: 25%;
         display: flex;
-        justify-content: end;
         margin-right: 20px;
         align-items: center;
     }
+    #header>#nav-right>#btn-camera {
+        
+        height: 32px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        padding-right: 20px;
+    }
 
+    #header>#nav-right>#btn-camera:hover {
+        scale: 1.1;
+        color: red;
+        transition: all 1.5s ease;
+    } 
+    #header>#nav-right>#btn-notification {
+        padding-right: 20px;
+
+        height: 32px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    @keyframes magnifying-bell {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(20deg);
+        }
+
+        100% {
+            transform: rotate(-20deg);
+        }
+
+    }
+
+    #header>#nav-right>#btn-notification:hover {
+        animation: magnifying-bell 0.5s ease-in-out infinite;
+    }
+
+    #header>#nav-right>#profile-img {
+        width: 32px;
+        border-radius: 50%;
+    }
 
 }
