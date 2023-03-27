@@ -307,9 +307,25 @@ main {
     align-items: center;
     font-size: 16px;
 }
+.info-movie-main {
+    padding-left:15px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+#description-movie {
+    padding-left:55px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+#description-movie:hover {
+    background-color: #aaa9a9;
+}
+.info-movie-main:hover {
+    background-color: #aaa9a9;
+}
 
-Aside {
+
+aside {
     width: 30%;
     margin: 0 2%;
- 
 }
