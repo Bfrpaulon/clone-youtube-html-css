@@ -1,43 +1,10 @@
-/* global styles */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-border-box;
-}
-
-/* Mobile devices (Portrait) */
-@media only screen and (max-width: 480px) {
-    body {
-        width: 350px;
-        border: solid 2px red;
-        display: flex;
-        justify-content: center;
-        margin: auto;
+/* global styles */    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-border-box;
     }
 
-    header img {
-        width: 200px;
-    }
-}
-
-/* Mobile devices (Landscape) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* styles for mobile devices in landscape mode */
-}
-
-/* Tablets and small desktops */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* styles for tablets and small desktops */
-}
-
-/* Medium screens, desktops and laptops */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /* styles for medium screens, desktops and laptops */
-}
-
-/* Large screens and high-resolution devices */
-@media only screen and (min-width: 1200px) {
     body {
         display: flex;
         flex-direction: column;
@@ -176,14 +143,13 @@
         transform: scale(1.1);
         transition: all 1s ease;
     }
-}
 
 main {
     display: flex;
 }
 
 #watching-video {
-    width: 70%;
+    width: 60%;
     margin: 0 2%;
 }
 
@@ -194,7 +160,7 @@ main {
 
 #watching-video>#video-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -213,8 +179,9 @@ main {
 
 #watching-video>#video-actions>#subscribe-button {
     display: flex;
+    padding-left: 10px;
     margin-top: 10px;
-    width: 16.65%;
+    width: 10.65%;
 }
 
 #watching-video>#video-actions>#subscribe-button>#btn-subscribe-button {
@@ -234,18 +201,21 @@ main {
     font-size: 20px;
     transition: all 1s;
 }
+
 #watching-video>#video-actions>#like {
     display: flex;
     margin-top: 10px;
     width: 16.65%;
     align-items: center;
 }
+
 #watching-video>#video-actions>#like>#btn-like {
     border: none;
     background-color: white;
     cursor: pointer;
     padding-right: 15px;
 }
+
 #watching-video>#video-actions>#like>#btn-like:hover {
     scale: 1.1;
 }
@@ -254,13 +224,15 @@ main {
     align-items: center;
     font-size: 16px;
 }
+
 #watching-video>#video-actions>#not-like {
     display: flex;
     margin-top: 10px;
-    width: 16.65%;    
+    width: 16.65%;
     align-items: center;
 
 }
+
 #watching-video>#video-actions>#not-like>#btn-not-like {
     border: none;
     background-color: white;
@@ -277,25 +249,29 @@ main {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    width: 16.65%;    
+    width: 16.65%;
     align-items: center;
 }
+
 #watching-video>#video-actions>#share>#btn-share {
     border: none;
     background-color: white;
     cursor: pointer;
     padding-right: 15px;
 }
-#watching-video>#video-actions>#share> p {
+
+#watching-video>#video-actions>#share>p {
     align-items: center;
     font-size: 16px;
 }
+
 #watching-video>#video-actions>#download {
     display: flex;
     margin-top: 10px;
-    width: 16.65%;    
+    width: 16.65%;
     align-items: center;
 }
+
 #watching-video>#video-actions>#download>#btn-download {
     border: none;
     background-color: white;
@@ -303,29 +279,42 @@ main {
     padding-right: 15px;
 
 }
-#watching-video>#video-actions>#download> p {
+
+#watching-video>#video-actions>#download>p {
     align-items: center;
     font-size: 16px;
 }
+
 .info-movie-main {
-    padding-left:15px;
+    padding-left: 15px;
     background-color: #ccc;
     border-radius: 5px;
 }
-#description-movie {
-    padding-left:55px;
-    background-color: #ccc;
-    border-radius: 5px;
-}
-#description-movie:hover {
-    background-color: #aaa9a9;
-}
+
 .info-movie-main:hover {
     background-color: #aaa9a9;
 }
 
+#description-movie {
+    padding: 50px;
+}
 
 aside {
-    width: 30%;
+    width: 40%;
     margin: 0 2%;
+}
+
+.movies-playlist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#thumbnail {
+    width: 100%;
+}
+
+#description-thumbnail {
+    width: 100%;
+    font-size: 12px;
 }
